@@ -30,6 +30,7 @@ plot(bladder_harman, 1, 5)
 legend("topleft",c("PRJEB21497", "PRJEB26931", "PRJNA313391", "PRJNA375772", "PRJNA389357", "PRJNA413125"),
        cex=0.5,col=c("red","blue","green", "yellow", "brown", "purple"),
        pch=c(1,2,3,4,5,6))
+
 library(limma, quietly=TRUE)
 design <- model.matrix(~0 + expt)
 colnames(design) <- c("Cancer", "Gastritis", "Healthy_control", "Metaplasia")
